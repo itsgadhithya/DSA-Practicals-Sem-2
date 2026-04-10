@@ -10,12 +10,3 @@ class Stack:
 
     def peek(self):
         return self.st[-1]
-
-
-foot = Stack()
-
-foot.push("element 1")
-foot.push("element 2")
-foot.push("element 3")
-foot.popS()
-print(foot.st)

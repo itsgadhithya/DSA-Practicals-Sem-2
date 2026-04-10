@@ -22,23 +22,6 @@ class CircularQueue:
     def dequeue(self):
         if self.isEmpty():
             raise IndexError("The given queue is empty!")
-        self.front = (self.front + 1) % self.MAX
+        self.q[self.head] = None
+        self.head = (self.head + 1) % self.MAX
         self.size -= 1
-
-
-qu = CircularQueue(4)
-
-print(qu.isEmpty())
-print(qu.isFull())
-
-print(qu.q)
-
-qu.enqueue(20)
-qu.enqueue(20)
-qu.enqueue(20)
-qu.enqueue(20)
-
-print(qu.q)
-
-print(qu.isEmpty())
-print(qu.isFull())
