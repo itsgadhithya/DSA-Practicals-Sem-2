@@ -19,16 +19,6 @@ def nearest_restaurant(graph, start, restaurants):
     return None
 
 
-graphs = {"A": ["B", "C"], "B": ["A", "D"], "C": ["A", "E"], "D": ["B"], "E": ["C"]}
-
-print("-" * 40)
-print("Breadth First Search: ")
-print("-" * 40)
-print(nearest_restaurant(graphs, "A", {"E", "D"}))
-print("-" * 40)
-print("\n")
-
-
 def has_cycle(graph):
     visited = set()
 
