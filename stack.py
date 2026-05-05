@@ -10,3 +10,6 @@ class Stack:
 
     def peek(self):
         return self.st[-1]
+
+    def __str__(self):
+        return "[" + ", ".join(str(i) for i in self.st) + "]"

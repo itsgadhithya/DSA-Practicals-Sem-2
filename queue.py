@@ -10,3 +10,6 @@ class Queue:
 
     def peek(self):
         return self.qu[-1]
+
+    def __str__(self):
+        return "[" + ", ".join(str(i) for i in self.qu) + "]"

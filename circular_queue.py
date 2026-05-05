@@ -25,3 +25,13 @@ class CircularQueue:
         self.q[self.head] = None
         self.head = (self.head + 1) % self.MAX
         self.size -= 1
+
+    def __str__(self):
+        ar = []
+        i = self.head
+
+        while i != self.tail:
+            ar.append(str(self.q[i]))
+            i = (i + 1) % self.MAX
+
+        return "[" + ", ".join(ar) + "]"
